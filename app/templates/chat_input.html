@@ -1,4 +1,4 @@
-<div>
-	<textarea ng-model="vm.text" ></textarea>
-	<button ng-click="send(vm.text, authorname, authoravatar)">SEND</button>
-</div>
+<form name="chatinput" class="chatform">
+	<textarea ng-model="vm.text" required></textarea>
+	<button ng-disabled="chatinput.$invalid" ng-class="{disabled:chatinput.$invalid}" ng-click="send(vm.text, authorname, authoravatar)">SEND</button>
+</form>

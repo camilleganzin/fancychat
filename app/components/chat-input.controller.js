@@ -20,8 +20,10 @@
 	            });
 	    }
 	    $scope.send = function (message, author, avatar) {
-	    	message = message.replace(/\n/g, "<br />");
-	    	message = to_trusted(message);
+	    	if (message) {
+	    		message = message.replace(/\n/g, "<br />");
+	    		message = to_trusted(message);
+	    	}
 	    	$rootScope.messages.push({text:message,player:author,avatar:avatar});
 	    	vm.text = "";
 	    }

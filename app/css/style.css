@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+html {
+  background-color: #e7e7e7;
+  font-family: "Lato"; }
+
+li {
+  list-style: none; }
+
+textarea {
+  background: #fff;
+  border: none;
+  width: 85%;
+  resize: none;
+  float: left; }
+
+button {
+  border: none;
+  background: #fff;
+  display: block;
+  text-align: right;
+  color: #f07850;
+  font-size: 14px;
+  line-height: 25px; }
+  button.disabled {
+    opacity: 0.5; }
+
+textarea,
+button {
+  height: 44px;
+  padding: 0; }
+
+.grid {
+  border: solid 1px #e7e7e7;
+  display: flex;
+  margin: 0 auto;
+  -webkit-justify-content: space-between;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  flex-flow: row wrap;
+  flex-wrap: wrap; }
+  .grid .grid_sidebar {
+    background-color: #444753;
+    color: white;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%; }
+    @media (min-width: 860px) {
+      .grid .grid_sidebar {
+        -webkit-flex-basis: 20%;
+        -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+        max-width: 20%; } }
+    .grid .grid_sidebar ul {
+      padding: 10px;
+      margin: 0; }
+      .grid .grid_sidebar ul li {
+        overflow: hidden; }
+  .grid .body {
+    -webkit-flex-basis: 90%;
+    -ms-flex-preferred-size: 90%;
+    flex-basis: 90%;
+    max-width: 90%;
+    flex-direction: row;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0 auto; }
+    @media (min-width: 860px) {
+      .grid .body {
+        width: 80%;
+        -webkit-flex-basis: 80%;
+        -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+        max-width: 80%; } }
+    .grid .body windowchat {
+      margin: 0 auto;
+      width: 90%; }
+      @media (min-width: 860px) {
+        .grid .body windowchat {
+          width: 40%; } }
+      .grid .body windowchat .messages_wrapper {
+        background-color: #e7e7e7;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        min-height: 200px; }
+        .grid .body windowchat .messages_wrapper h1 {
+          background-color: #efefef;
+          padding: 5px 10px;
+          line-height: 20px;
+          font-size: 14px;
+          border-bottom: 1px solid #e0e0e0; }
+      .grid .body windowchat chatinput .chatform {
+        clear: both;
+        margin-bottom: 50px;
+        background-color: #fff;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        height: 44px;
+        padding: 2px; }
+
+.avatar, .avatar-chat {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border-radius: 50%;
+  float: left;
+  margin-left: 5%;
+  border: solid 2px #fff; }
+
+.avatar-chat {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: -40%;
+  top: 0;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1); }
+
+.infos {
+  float: left;
+  height: 50px;
+  margin-left: 10px; }
+  .infos h2,
+  .infos p {
+    margin: 0; }
+  .infos p,
+  .infos .online {
+    float: left; }
+  .infos h2 {
+    font-size: 15px;
+    line-height: 25px; }
+  .infos p {
+    font-size: 10px;
+    line-height: 10px;
+    margin-left: 5px; }
+  .infos .online {
+    color: #86BB71;
+    font-size: 12px; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.bubble {
+  width: 35%;
+  color: white;
+  padding: 1px 20px;
+  line-height: 26px;
+  font-size: 16px;
+  border-radius: 7px;
+  margin: 0 10px 30px 70px;
+  position: relative;
+  background: #86BB71;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  float: left; }
+  .bubble:after {
+    position: absolute;
+    border-left: 15px solid transparent;
+    left: -12px;
+    top: 15px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 15px solid #86BB71; }
+  .bubble.sender {
+    text-align: right;
+    background: #94C2ED;
+    float: right; }
+    .bubble.sender:after {
+      border-top: 15px solid #94C2ED; }
