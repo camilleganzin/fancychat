@@ -1,0 +1,12 @@
+<div class="windowchat clearfix">
+	<div class="messages_wrapper clearfix">
+		<div>
+			<h1>{{name}}</h1>
+		</div>
+		<div ng-class="{sender:message.player==name}" class="bubble" ng-repeat="message in $root.messages track by $index" player="{{name}}">
+			<img class="avatar-chat" ng-style="{'background-image':'url({{message.avatar}})'}">
+			<p ng-bind-html="message.text"></p>
+		</div>
+	</div>
+	<chatinput authorname="{{name}}" authoravatar="{{avatar}}"></chatinput>
+</div>

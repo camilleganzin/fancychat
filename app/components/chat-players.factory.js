@@ -14,6 +14,7 @@
 
         return service;
 
+        /*init users and make them available in components*/
         function getUsers() {
             var players = [
                 {name:'Amy',avatar:'/images/amy.jpg',status:'online'},

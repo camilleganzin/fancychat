@@ -1,0 +1,6 @@
+<div class="grid">
+	<online class="grid_sidebar"></online>
+	<div class="body">
+		<windowchat ng-repeat="player in vm.players track by $index" name="{{vm.players[$index].name}}" avatar="{{vm.players[$index].avatar}}"></windowchat>
+	</div>
+</div>

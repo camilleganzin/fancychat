@@ -1,0 +1,9 @@
+<ul ng-repeat="player in vm.players track by $index">
+	<li>
+		<div class="avatar" ng-style="{'background-image':'url({{player.avatar}})'}"></div>
+		<div class="infos">
+			<h2>{{player.name}}</h2>
+			<i class="fa fa-circle online"></i><p>{{player.status}}</p>
+		</div>
+	</li>
+</ul>
