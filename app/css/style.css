@@ -83,6 +83,8 @@ button {
       @media (min-width: 860px) {
         .grid .body windowchat {
           width: 40%; } }
+      .grid .body windowchat .windowchat {
+        margin-top: 50px; }
       .grid .body windowchat .messages_wrapper {
         background-color: #e7e7e7;
         box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
