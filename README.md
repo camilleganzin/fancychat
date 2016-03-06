@@ -1,7 +1,8 @@
 # fancychat
-*AngularJS chat with two conversation windows*
+*_AngularJS chat with two conversation windows_*
 
-This chat allow to talk from a window or an other, seeing all messages.
+This chat allow to talk from a window or an other, seeing all messages. 
+Develop in mobile first, it's available on every devices.
 
 It can be served on localhost with Gulp. In the terminal, do the 'gulp watch' command line.
 
@@ -12,7 +13,7 @@ Moreover, the division of files per modules avoid collisions with teams in sourc
 
 
 
-*To go further*
+*_To go further_*
 
 This app can be improve with simples things like :
 - add the date of messages

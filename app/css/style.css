@@ -9,9 +9,12 @@ li {
 textarea {
   background: #fff;
   border: none;
-  width: 85%;
+  width: 75%;
   resize: none;
   float: left; }
+  @media (min-with: 600px) {
+    textarea {
+      width: 85%; } }
 
 button {
   border: none;

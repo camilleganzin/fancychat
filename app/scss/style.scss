@@ -20,7 +20,10 @@ li {
 textarea {
 	background: #fff;
 	border:none;
-	width: 85%;
+	width: 75%;
+	@media (min-with: 600px) {
+		width: 85%;
+	}
 	resize: none;
 	float: left;
 }
